@@ -1,0 +1,149 @@
+/* 
+ * Theme Name:      StoreTheme
+ * Theme URI:       https://hoangayle.com
+ * Author:          SonPhamHF
+ * Author URI:      https://fb.me/huangshan307
+ * Description:     A store theme using Bootstrap v4. Project1804221
+ * Version:         1.0
+ * License:      	GNU General Public License v2 or later
+ * License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+ * Textdomain:      storetheme
+ * Tags:            e-commerce, two-columns, customize, left-sidebar
+ */
+.title {
+  font-weight: 400; }
+
+.single-product .product-info .stock.out-of-stock::after {
+  content: "";
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background-image: url(images/sold_out.png);
+  background-position: center;
+  background-size: 100%; }
+.single-product .product-info .product_meta {
+  margin: -20px;
+  padding: 15px 20px;
+  background-color: rgba(252, 228, 236, 0.18);
+  color: #444444; }
+  .single-product .product-info .product_meta > span {
+    position: relative;
+    padding-right: 5px; }
+    .single-product .product-info .product_meta > span::after {
+      content: '';
+      height: 14px;
+      position: absolute;
+      right: 0;
+      display: block;
+      width: 1px;
+      background: rgba(0, 0, 0, 0.5);
+      top: 50%;
+      margin-top: -7px; }
+  .single-product .product-info .product_meta a {
+    color: #D9587E; }
+.single-product .tab-title {
+  font-size: 22px; }
+
+.nav-pills .nav-link {
+  color: #d9587e; }
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #d9587e; }
+
+.woocommerce-error a,
+.woocommerce-info a,
+.woocommerce-message a {
+  color: white;
+  font-weight: 700; }
+
+.touchspin button {
+  color: #9E9E9E;
+  border-color: #9E9E9E;
+  background-color: #fff;
+  background-clip: padding-box; }
+.touchspin .input {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #9E9E9E;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #9E9E9E;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  .touchspin .input:focus {
+    outline: none; }
+
+.btn-add-to-cart {
+  background-image: linear-gradient(-135deg, #D9587E 10%, #ff4356 100%);
+  text-transform: uppercase;
+  box-shadow: 0 3px 5px 0 rgba(239, 76, 102, 0.5);
+  transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease; }
+  .btn-add-to-cart:hover {
+    background-image: linear-gradient(-135deg, #D9587E 50%, #ff4356 100%); }
+    .btn-add-to-cart:hover i {
+      font-size: 24px; }
+
+.bg-gradient-warning {
+  background-image: linear-gradient(135deg, #ffc107 20%, #ff7f35 100%); }
+.bg-gradient-success {
+  background-image: linear-gradient(135deg, #5bcd5b 10%, #49C628 100%); }
+.bg-gradient-info {
+  background-image: linear-gradient(135deg, #97ABFF 10%, #1e85be 100%); }
+
+.navbar-expand-lg .navbar-nav .is-active a {
+  color: #d9587e;
+  font-weight: 700; }
+.navbar-expand-lg .navbar-nav .woocommerce-MyAccount-navigation-link--customer-logout a {
+  color: #ff4356; }
+
+.size-100 {
+  width: 100px; }
+
+.product-thumbnail a img {
+  width: 100px; }
+
+.woocommerce-password-strength {
+  display: block;
+  margin-top: 0.75rem;
+  width: 100%;
+  text-align: right;
+  background: transparent !important; }
+  .woocommerce-password-strength::after {
+    display: inline-block;
+    font-family: Font Awesome\ 5 Free;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f119";
+    margin-left: .5407911001em; }
+  .woocommerce-password-strength.short {
+    color: #e35b5b; }
+  .woocommerce-password-strength.bad {
+    color: #f78b53; }
+  .woocommerce-password-strength.good {
+    color: #3d9cd2; }
+    .woocommerce-password-strength.good::after {
+      content: "\f11a"; }
+  .woocommerce-password-strength.strong {
+    color: #83c373; }
+    .woocommerce-password-strength.strong::after {
+      content: "\f118"; }
+
+.login-ui .modal-header {
+  background: #D9587E;
+  background: linear-gradient(135deg, #ff4356 10%, #D9587E 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ff4356, endColorstr=#D9587E); }
+.login-ui .modal-body .form-control {
+  background-color: #e9ecef !important; }
+  .login-ui .modal-body .form-control:focus {
+    outline: none;
+    box-shadow: none; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,331 @@
+/* 
+ * Theme Name:      StoreTheme
+ * Theme URI:       https://hoangayle.com
+ * Author:          SonPhamHF
+ * Author URI:      https://fb.me/huangshan307
+ * Description:     A store theme using Bootstrap v4. Project1804221
+ * Version:         1.0
+ * License:      	GNU General Public License v2 or later
+ * License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+ * Textdomain:      storetheme
+ * Tags:            e-commerce, two-columns, customize, left-sidebar
+ */
+
+body {
+    background-color: #efefef;
+}
+
+* {
+    transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.title {
+    color: #C26484;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*** Bootstrap Custom ***/
+
+/** Text **/
+
+.text-title-primary {
+    color: #C26484;
+}
+
+.text-primary {
+    color: #D89DA3 !important;
+}
+
+/** Background **/
+
+.bg-primary {
+    background-color: #D89DA3 !important;
+}
+
+.bg-strong-primary {
+    background-color: #D9587E !important;
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+    background-color: #D89DA3 !important;
+}
+
+/** Badge **/
+
+.badge-strong-primary {
+    color: white;
+    background-color: #D9587E;
+}
+
+/*** Bootstrap Custom ***/
+
+header {
+    background-color: #D89DA3;
+}
+
+header .header-main form.search .form-control {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 2px;
+    border: 0;
+}
+
+header .header-main .btn-cart {
+    font-size: 22px;
+}
+
+header .header-top {
+    background-color: #D9587E;
+    color: white;
+    font-size: 15px;
+}
+
+header .header-top nav .navbar-nav.has-separator .nav-item {
+    position: relative;
+}
+
+header .header-top nav .navbar-nav.has-separator .nav-item::after {
+    content: '';
+    height: 14px;
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    margin-top: -7px;
+}
+
+header .header-top nav .navbar-nav.has-separator .nav-item .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.box-shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.product-content .item-card {
+    padding: 10px 5px 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.product-content .item-card:hover {
+    transform: translate(0, -10px);
+    transition: all 300ms ease;
+}
+
+.product-content .item-card:hover .add_to_cart_button {
+    display: block !important;
+}
+
+.product-content .item-wrapper .link {
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    text-decoration: none;
+}
+
+.product-content .item-wrapper .link .card.shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    overflow: visible;
+}
+
+.product-content .item-wrapper .link .card.full {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 0;
+    transition: box-shadow 0.1s cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.6, 1);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.6, 1), box-shadow 0.1s cubic-bezier(0.4, 0, 0.6, 1);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 0.6, 1), box-shadow 0.1s cubic-bezier(0.4, 0, 0.6, 1), -webkit-transform 0.1s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.product-content .item-wrapper .link .card:hover {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.product-content .item-wrapper .link .card .item-image {
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    overflow: hidden;
+}
+
+.product-content .item-wrapper .link .card .item-image .background {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+    display: block;
+}
+
+.product-content .item-wrapper .link .card .item-image .background .image {
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.product-content .item-wrapper .link .card .card-body .reason-set .full-price {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: line-through;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.product-content .item-wrapper .link .card .card-body .reason-set .display-price {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.product-content .item-wrapper .link .card .card-body .reason-set .star-container {
+    display: inline-block;
+    position: relative;
+}
+
+.product-content .item-wrapper .link .card .card-body .reason-set .star-container .tiny-star {
+    background: url(../images/star-none.png);
+    height: 14px;
+    width: 69px;
+}
+
+.product-content .item-wrapper .link .card .card-body .reason-set .star-container .tiny-star .current-rating {
+    background: url(../images/star.png) left bottom;
+    height: 14px;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper {
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper .badge {
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    padding: 4px 2px 3px;
+    border-radius: 0;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper .badge.fixed-width {
+    width: 38px;
+    height: 35px;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper .badge.promotion {
+    background-color: #D9587E;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper .badge.promotion:after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: -4px;
+    border-style: solid;
+    position: absolute;
+    border-width: 0 19px 4px;
+    border-color: transparent #D9587E;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper .badge.promotion .label-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    line-height: 12px;
+    color: #1eff7f;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.product-content .item-wrapper .link .card .badge-wrapper .badge.promotion .label-wrapper .off-label {
+    color: #fff;
+    margin: 3px 0;
+}
+
+.product-content .item-wrapper .link .add_to_cart_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (min-width: 400px) {
+    .product-content .item-card {
+        width: 50%;
+    }
+}
+
+@media (min-width: 767px) {
+    .product-content .item-card {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 992px) {
+    .product-content .item-card {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-content .item-card {
+        width: 20%;
+    }
+}
+
+/*# sourceMappingURL=main.css.map */
